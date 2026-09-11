@@ -1,0 +1,20 @@
+body {
+    background-color: #eaf4e2;
+    color: #234d20;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #2f6b2f;
+}
+
+p {
+    color: #476b43;
+}
+
+img {
+    width: 300px;
+    border-radius: 15px;
+}
