@@ -1,13 +1,17 @@
 body {
-    background-color: #eaf4e2;
+    background: linear-gradient(to bottom, #d4fcb3, #529b2d);
+min-height: 100vh;
     color: #234d20;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 30px;
+    margin: 0;
+padding: 0;
 }
 
 h1 {
-    color: #2f6b2f;
+    color: #005e00;
+    font-size: 42px;
+    text-shadow: 1px 1px 2px #b7cdb0;
 }
 
 p {
@@ -17,4 +21,98 @@ p {
 img {
     width: 300px;
     border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0 6px 15px #9dbb95;
+}
+a {
+    display: inline-block;
+    background-color: #2f6b2f;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+a:hover {
+    transform: scale(1.1);
+}
+video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 0;
+box-shadow: none;
+}
+nav {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 96%;
+    max-width: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 14px;
+    background-color: rgba(255, 255, 255, 0.82);
+backdrop-filter: blur(8px);
+    border-radius: 50px;
+}
+
+.logo {
+    width: 180px;
+    height: 65px;
+    object-fit: contain;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    mix-blend-mode: multiply;
+}
+
+.nav-link {
+    background-color: #2f6b2f;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+#about {
+    min-height: 300px;
+    display: flex;
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef7e9;
+    color: #245027;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 38px;
+}
+.logo-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-box .logo {
+    width: 80px;
+    height: 80px;
+    max-width: none;
+    object-fit: contain;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    mix-blend-mode: multiply;
+}
+.about-text {
+    width: min(80%, 850px);
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
 }
